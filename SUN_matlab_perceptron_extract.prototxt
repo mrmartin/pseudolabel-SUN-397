@@ -1,0 +1,64 @@
+name: "SUN"
+layers {
+  name: "data"
+  type: HDF5_DATA
+  top: "data"
+  top: "label"
+  hdf5_data_param {
+    source: "matlab_dataset_test_list"
+    batch_size: 10
+  }
+  include: {
+    phase: TEST
+  }
+}
+layers {
+  name: "relu7"
+  type: RELU
+  bottom: "data"
+  top: "data"
+}
+layers {
+  name: "drop"
+  type: DROPOUT
+  bottom: "data"
+  top: "data"
+  dropout_param {
+    dropout_ratio: 0.5
+  }
+}
+layers {
+  name: "perceptron"
+  type: INNER_PRODUCT
+  bottom: "data"
+  top: "perceptron"
+  blobs_lr: 1
+  blobs_lr: 2
+  weight_decay: 1
+  weight_decay: 0
+  inner_product_param {
+    num_output: 397
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layers {
+  name: "accuracy"
+  type: ACCURACY
+  bottom: "perceptron"
+  bottom: "label"
+  top: "accuracy"
+}
+layers {
+  name: "loss"
+  type: SOFTMAX_LOSS
+  bottom: "perceptron"
+  bottom: "label"
+  top: "loss"
+}
