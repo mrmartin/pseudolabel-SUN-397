@@ -65,7 +65,7 @@ for min_belief=5%[2 5 15]
 				test_image_indexes=single([]);%unmixed indexes of sun_lab
 				goo_image_indexes=single([]);%unmixed indexes of goo_lab
 
-				disp(['sun_all_feats and sun_label are ordered. Let''s randomly select ' num2str(train_set_size) ' images from each SUN class for training and ' num2str(diss_set_size) '% of each google class for dissolution, and save indexes in a variable'])
+				disp(['sun_all_feats and sun_label are ordered. Let''s randomly select ' num2str(train_set_size) ' images from each SUN class for training and ' num2str(diss_set_size) '% of each google class for dissolution'])
 				rng default
 				for i=1:length(classes)
 					sun_indexes = find(sun_lab==i);%indexes of n images
@@ -90,7 +90,7 @@ for min_belief=5%[2 5 15]
 				goo_testing=randperm(length(goo_image_indexes));%mixed so that the selection accuracy can be tested in the first epoch
 
 				[~,m]=unix('rm SUN_solver_oneit.prototxt.log');
-				it_size=1000;
+				it_size=200;
 				clear chosen_accuracy chosen_number unused_accuracy goo_used_labels goo_used_label_beliefs
 				for itteration=0:it_size:10000%39000
 					disp(['running itteration ' num2str(itteration)])
@@ -120,6 +120,7 @@ for min_belief=5%[2 5 15]
 					[~,m]=unix('cp SUN_solver_oneit_train.prototxt tmp_matlab_solver');
 					[~,m]=unix('echo "snapshot_prefix: \"SUN_matlab_solver\"" >> tmp_matlab_solver');
 					[~,m]=unix(['echo "max_iter: ' num2str(itteration+it_size) '" >> tmp_matlab_solver']);
+					[~,m]=unix(['echo "snapshot: ' num2str(it_size) '" >> tmp_matlab_solver']);
 					[~,m]=unix('echo /media/martin/ssd-ext4/sun_test_dataset.h5 > matlab_dataset_test_list');
 					successtrain=1;
 					while(successtrain~=0)
@@ -145,14 +146,14 @@ for min_belief=5%[2 5 15]
 						h5write('/media/martin/ssd-ext4/sun_contaminated_dataset.h5','/data',reshape(single(goo_feat(goo_image_indexes(goo_testing),:)'),[1 1 4096 length(goo_testing)]));
 						h5write('/media/martin/ssd-ext4/sun_contaminated_dataset.h5','/label',single(zeros(1,length(goo_testing))));
 
-						%run evaluation on test images
+						disp('run evaluation on test images')
 						[~,m]=unix('rm -r contaminated_perceptron_extracted');
 						[~,m]=unix('echo /media/martin/ssd-ext4/sun_test_dataset.h5 > matlab_dataset_test_list');
 						[~,mget]=unix(['GLOG_logtostderr=1 /media/martin/MartinK3TB/Documents/caffe/build/tools/extract_features SUN_matlab_solver_iter_' num2str(itteration+it_size) '.caffemodel SUN_matlab_perceptron_extract.prototxt perceptron contaminated_perceptron_extracted ' num2str(ceil(length(test_image_indexes)/10))]);
 						test_pred=csvread('contaminated_perceptron_extracted.csv');
 						test_pred=test_pred(1:length(test_image_indexes),:);
 
-						%run evaluation on unused
+						disp('run evaluation on unused pseudolabel images')
 						disp('evaluating on contaminated test subset')
 						[~,m]=unix('rm -r contaminated_perceptron_extracted');
 						[~,m]=unix('echo /media/martin/ssd-ext4/sun_contaminated_dataset.h5 > matlab_dataset_test_list');
@@ -197,10 +198,10 @@ for min_belief=5%[2 5 15]
 					plot(train_accuracy(:,1),test_accuracy(1:end-(itteration/it_size)-1),'r')
 
 					if(diss_set_size~=0)
-						plot(train_accuracy(20:20:length(unused_accuracy)*20,1),unused_accuracy,'k')
+						plot(train_accuracy((it_size/50):(it_size/50):length(unused_accuracy)*(it_size/50),1),unused_accuracy,'k')
 
-						plot(train_accuracy(20:20:length(chosen_accuracy)*20,1),chosen_accuracy,'g')
-						text(train_accuracy(20:20:length(chosen_accuracy)*20,1),chosen_accuracy,num2str(chosen_number'),'horiz','center','vert','bottom')
+						plot(train_accuracy((it_size/50):(it_size/50):length(chosen_accuracy)*(it_size/50),1),chosen_accuracy,'g')
+						text(train_accuracy((it_size/50):(it_size/50):length(chosen_accuracy)*(it_size/50),1),chosen_accuracy,num2str(chosen_number'),'horiz','center','vert','bottom')
 					end
 
 					legend('training accuracy','test accuracy',['contaminated accuracy (' num2str(length(goo_image_indexes)) ' images)'],['contaminated accuracy where belief > ' num2str(min_belief)],'Location','northwest')
