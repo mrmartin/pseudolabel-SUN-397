@@ -2,7 +2,7 @@ if(false)
 	%rewritten code for pseudolabel training with google images
 	clear
 
-	results_folder = 'pseudolabels_properly_ordered_google'
+	results_folder = 'pseudolabels_nogoogle_final'
 	mkdir(results_folder)
 	%% load data %%
 	disp('loading labels and features')
@@ -56,16 +56,16 @@ if(false)
 	disp(['number of google images per category is at least ' num2str(min(histc(goo_lab,unique(goo_lab))))])
 end
 
-for min_belief=5%[2 5 15]
-	for diss_set_size=5%[1 5 50] %this is the proportion in each class! 10:50:450
-		for train_set_size=50%this is now set size!
+for diss_set_size=0%[20 100 500]%[1 5 50] %this is the proportion in each class! 10:50:450
+	for min_belief=5%[5 1 2 10]%[2 5 15]
+		for train_set_size=[20 5]%this is now set size!
 			if((diss_set_size==0 && min_belief==5) || diss_set_size~=0)
 				tic
 				train_image_indexes=single([]);%unmixed indexes of sun_lab
 				test_image_indexes=single([]);%unmixed indexes of sun_lab
 				goo_image_indexes=single([]);%unmixed indexes of goo_lab
 
-				disp(['sun_all_feats and sun_label are ordered. Let''s randomly select ' num2str(train_set_size) ' images from each SUN class for training and ' num2str(diss_set_size) '% of each google class for dissolution'])
+				disp(['sun_all_feats and sun_label are ordered. Let''s randomly select ' num2str(train_set_size) ' images from each SUN class for training and ' num2str(diss_set_size) ' images of each google class for dissolution'])
 				rng default
 				for i=1:length(classes)
 					sun_indexes = find(sun_lab==i);%indexes of n images
@@ -73,9 +73,10 @@ for min_belief=5%[2 5 15]
 					test_image_indexes = [test_image_indexes;sun_indexes((train_set_size+1):end)];%verified output
 				
 					goo_indexes = find(goo_lab==i);%indexes of n images
-					goo_image_indexes = [goo_image_indexes;goo_indexes(1:floor(diss_set_size/100*histc(goo_lab,i)))];%verified output
+					goo_image_indexes = [goo_image_indexes;goo_indexes(1:min(length(goo_indexes),diss_set_size))];%verified output%/100*histc(goo_lab,i)
 				end
 				clear goo_indexes sun_indexes
+				spike=[];%randperm(length(test_image_indexes));
 
 				%prepare test data
 				test_order = randperm(length(test_image_indexes));
@@ -90,11 +91,12 @@ for min_belief=5%[2 5 15]
 				goo_testing=randperm(length(goo_image_indexes));%mixed so that the selection accuracy can be tested in the first epoch
 
 				[~,m]=unix('rm SUN_solver_oneit.prototxt.log');
-				it_size=200;
+				it_size=500;%has to be a multiple of 50
+				start_from=0;%0
 				clear chosen_accuracy chosen_number unused_accuracy goo_used_labels goo_used_label_beliefs
-				for itteration=0:it_size:10000%39000
+				for itteration=start_from:it_size:10000
 					disp(['running itteration ' num2str(itteration)])
-
+				
 					%prepare training data
 					disp(['writing new sun_dataset.h5, including ' num2str(length(goo_training)) ' pseudolabel images'])
 
@@ -102,18 +104,14 @@ for min_belief=5%[2 5 15]
 					h5create('/media/martin/ssd-ext4/sun_dataset.h5','/data',[1 1 4096 length(goo_training)+length(train_image_indexes)],'DataType','single')
 					h5create('/media/martin/ssd-ext4/sun_dataset.h5','/label',[1 length(goo_training)+length(train_image_indexes)],'DataType','single')
 
-					train_feat=[sun_feat(train_image_indexes,:);goo_feat(goo_image_indexes(goo_training),:)];%correctl features
-
-					permute_goo=randperm(length(goo_training));
-					goo_training(1:round(length(goo_training)/2))=goo_training(permute_goo(1:round(length(goo_training)/2)));%completely mix half of what the system sees
-					train_lab=[sun_lab(train_image_indexes);goo_lab(goo_image_indexes(goo_training))];%half the labels are wrong
+					train_feat=[sun_feat(train_image_indexes,:);goo_feat(goo_image_indexes(goo_training),:)];%correct features, plus extra image for extra category
+					train_lab=[sun_lab(train_image_indexes);goo_lab(goo_image_indexes(goo_training))];%add extra category
 					whos('train_lab','train_feat')
-				
-					train_random=randperm(length(train_lab));
-						
+			
+					train_random=randperm(length(train_lab));					
 					h5write('/media/martin/ssd-ext4/sun_dataset.h5','/data',reshape(single(train_feat(train_random,:)'),[1 1 4096 length(train_lab)]));
 					h5write('/media/martin/ssd-ext4/sun_dataset.h5','/label',single(train_lab(train_random)-1)');
-
+					
 					clear train_feat train_lab;
 
 					disp('training')
@@ -137,53 +135,75 @@ for min_belief=5%[2 5 15]
 					end
 
 					if(diss_set_size~=0)
-						disp('rewriting unused goo set')
-						delete /media/martin/ssd-ext4/sun_contaminated_dataset.h5
-						h5create('/media/martin/ssd-ext4/sun_contaminated_dataset.h5','/data',[1 1 4096 length(goo_testing)],'DataType','single')
-						h5create('/media/martin/ssd-ext4/sun_contaminated_dataset.h5','/label',[1 length(goo_testing)],'DataType','single')
+						if(false)
+							disp('run evaluation on test images')
+							[~,m]=unix('rm -r contaminated_perceptron_extracted');
+							[~,m]=unix('echo /media/martin/ssd-ext4/sun_test_dataset.h5 > matlab_dataset_test_list');
+							[~,mget]=unix(['GLOG_logtostderr=1 /media/martin/MartinK3TB/Documents/caffe/build/tools/extract_features SUN_matlab_solver_iter_' num2str(itteration+it_size) '.caffemodel SUN_matlab_perceptron_extract.prototxt perceptron contaminated_perceptron_extracted ' num2str(ceil(length(test_image_indexes)/10))]);
+							test_pred=csvread('contaminated_perceptron_extracted.csv');
+							test_pred=test_pred(1:length(test_image_indexes),:);
 
-						%mix and write goo for testing. No labels, no order randomization!
-						h5write('/media/martin/ssd-ext4/sun_contaminated_dataset.h5','/data',reshape(single(goo_feat(goo_image_indexes(goo_testing),:)'),[1 1 4096 length(goo_testing)]));
-						h5write('/media/martin/ssd-ext4/sun_contaminated_dataset.h5','/label',single(zeros(1,length(goo_testing))));
-
-						disp('run evaluation on test images')
-						[~,m]=unix('rm -r contaminated_perceptron_extracted');
-						[~,m]=unix('echo /media/martin/ssd-ext4/sun_test_dataset.h5 > matlab_dataset_test_list');
-						[~,mget]=unix(['GLOG_logtostderr=1 /media/martin/MartinK3TB/Documents/caffe/build/tools/extract_features SUN_matlab_solver_iter_' num2str(itteration+it_size) '.caffemodel SUN_matlab_perceptron_extract.prototxt perceptron contaminated_perceptron_extracted ' num2str(ceil(length(test_image_indexes)/10))]);
-						test_pred=csvread('contaminated_perceptron_extracted.csv');
-						test_pred=test_pred(1:length(test_image_indexes),:);
-
-						disp('run evaluation on unused pseudolabel images')
-						disp('evaluating on contaminated test subset')
-						[~,m]=unix('rm -r contaminated_perceptron_extracted');
-						[~,m]=unix('echo /media/martin/ssd-ext4/sun_contaminated_dataset.h5 > matlab_dataset_test_list');
-						[~,mget]=unix(['GLOG_logtostderr=1 /media/martin/MartinK3TB/Documents/caffe/build/tools/extract_features SUN_matlab_solver_iter_' num2str(itteration+it_size) '.caffemodel SUN_matlab_perceptron_extract.prototxt perceptron contaminated_perceptron_extracted ' num2str(ceil(length(goo_testing)/10))]);
-
-						unused_pred=csvread('contaminated_perceptron_extracted.csv');
-						unused_pred=unused_pred(1:length(goo_testing),:);
-
-						%select goo_training and goo_testing for next itteration
-						[belief guess]=max(unused_pred,[],2);
-						unused_true_labels=goo_lab(goo_image_indexes(goo_testing));
-						[~,unused_true_indexes]=ismember(goo_image_indexes(goo_testing),goo_image_indexes);
-						goo_used_labels(unused_true_indexes,itteration/it_size+1)=guess;
-						goo_used_label_beliefs(unused_true_indexes,itteration/it_size+1)=belief;
-
-						unused_accuracy(itteration/it_size+1)=sum(unused_true_labels==guess)/length(guess);
-
-						selected_unused=find(belief>min_belief);
-
-						chosen_accuracy(itteration/it_size+1)=sum(unused_true_labels(selected_unused)==guess(selected_unused))/length(selected_unused);
-
-						chosen_number(itteration/it_size+1)=length(selected_unused);
-
-						%map the chosen images back to their index in goo_image_indexes
-						[~,goo_training]=ismember(goo_image_indexes(goo_testing(selected_unused)),goo_image_indexes);
-						
-						if(chosen_accuracy(itteration/it_size+1)~=sum(goo_lab(goo_image_indexes(goo_training))==guess(selected_unused))/length(selected_unused))
-							disp('the selection doesn''t add up, check it out!');
+							[a b]=max(test_pred,[],2);
+							c=confusionmat(double(sun_lab(test_image_indexes(test_order))),b);
+							test_class_accuracy=diag(c)./sum(c,2);
+							%[test_class_accuracy test_class]=sort(diag(c)./sum(c,2));
+							%get more images proportionally to how bad each class is doing
+							goo_wanted_training=find(test_class_accuracy(goo_lab(goo_image_indexes))<rand(size(goo_image_indexes)));%naturally, if this works it needs to be chosen using train and unused accuracy!
+						else
+							goo_wanted_training=goo_image_indexes;
 						end
 
+						if(false)
+							disp('rewriting unused goo set')
+							delete /media/martin/ssd-ext4/sun_contaminated_dataset.h5
+							h5create('/media/martin/ssd-ext4/sun_contaminated_dataset.h5','/data',[1 1 4096 length(goo_testing)],'DataType','single')
+							h5create('/media/martin/ssd-ext4/sun_contaminated_dataset.h5','/label',[1 length(goo_testing)],'DataType','single')
+
+							%mix and write goo for testing. No labels, no order randomization!
+							h5write('/media/martin/ssd-ext4/sun_contaminated_dataset.h5','/data',reshape(single(goo_feat(goo_image_indexes(goo_testing),:)'),[1 1 4096 length(goo_testing)]));
+							h5write('/media/martin/ssd-ext4/sun_contaminated_dataset.h5','/label',single(zeros(1,length(goo_testing))));
+
+							disp('evaluating on contaminated test subset')
+							[~,m]=unix('rm -r contaminated_perceptron_extracted');
+							[~,m]=unix('echo /media/martin/ssd-ext4/sun_contaminated_dataset.h5 > matlab_dataset_test_list');
+							[~,mget]=unix(['GLOG_logtostderr=1 /media/martin/MartinK3TB/Documents/caffe/build/tools/extract_features SUN_matlab_solver_iter_' num2str(itteration+it_size) '.caffemodel SUN_matlab_perceptron_extract.prototxt perceptron contaminated_perceptron_extracted ' num2str(ceil(length(goo_testing)/10))]);
+
+							unused_pred=csvread('contaminated_perceptron_extracted.csv');
+							unused_pred=unused_pred(1:length(goo_testing),:);
+
+							%select goo_training and goo_testing for next itteration
+							[belief guess]=max(unused_pred,[],2);
+							unused_true_labels=goo_lab(goo_image_indexes(goo_testing));
+							[~,unused_true_indexes]=ismember(goo_image_indexes(goo_testing),goo_image_indexes);
+							goo_used_labels(unused_true_indexes,itteration/it_size+1)=guess;
+							goo_used_label_beliefs(unused_true_indexes,itteration/it_size+1)=belief;
+
+							unused_accuracy(itteration/it_size+1)=sum(unused_true_labels==guess)/length(guess);
+
+							%min belief
+							%selected_unused=find(belief>min_belief);
+							%max belief
+							%selected_unused=find(belief<min_belief);
+							%agreement
+							%selected_unused=find(unused_true_labels==guess);
+							%likely correct, not necessarily highest belief
+							unused_true_belief=unused_pred(sub2ind(size(unused_pred),[1:length(unused_true_labels)]',double(unused_true_labels)));
+							[highest_true_beliefs images_index]=sort(unused_true_belief,'descend');
+							selected_unused=images_index(1:floor(length(goo_testing)/3));
+
+							chosen_accuracy(itteration/it_size+1)=sum(unused_true_labels(selected_unused)==guess(selected_unused))/length(selected_unused);
+
+							chosen_number(itteration/it_size+1)=length(selected_unused);
+
+							%map the chosen images back to their index in goo_image_indexes
+							[~,goo_training]=ismember(goo_image_indexes(goo_testing(selected_unused)),goo_image_indexes);
+						
+							if(chosen_accuracy(itteration/it_size+1)~=sum(goo_lab(goo_image_indexes(goo_training))==guess(selected_unused))/length(selected_unused))
+								disp('the selection doesn''t add up, check it out!');
+							end
+
+							%goo_training = intersect(goo_wanted_training,goo_training);
+						end
 						goo_training=goo_training(rand(size(goo_training))>0.5);%randomly remove half
 						
 						goo_testing=setdiff(1:length(goo_image_indexes),goo_training);
@@ -192,30 +212,27 @@ for min_belief=5%[2 5 15]
 					[~,m]=unix('grep "accuracy = " SUN_solver_oneit.prototxt.log | grep Test | sed ''s/.*accuracy = //g'' > test_loss.csv');
 					train_accuracy=csvread('train_loss.csv');
 					test_accuracy=csvread('test_loss.csv');
+					test_accuracy=test_accuracy(1:length(train_accuracy),:);%crop to match train accuracy
 
 					plot(train_accuracy(:,1),train_accuracy(:,2))
 					hold on
-					plot(train_accuracy(:,1),test_accuracy(1:end-(itteration/it_size)-1),'r')
+					plot(train_accuracy(:,1),test_accuracy(1:end),'r')
 
-					if(diss_set_size~=0)
+					if(exist('chosen_number') && diss_set_size~=0)
 						plot(train_accuracy((it_size/50):(it_size/50):length(unused_accuracy)*(it_size/50),1),unused_accuracy,'k')
 
 						plot(train_accuracy((it_size/50):(it_size/50):length(chosen_accuracy)*(it_size/50),1),chosen_accuracy,'g')
 						text(train_accuracy((it_size/50):(it_size/50):length(chosen_accuracy)*(it_size/50),1),chosen_accuracy,num2str(chosen_number'),'horiz','center','vert','bottom')
 					end
 
-					legend('training accuracy','test accuracy',['contaminated accuracy (' num2str(length(goo_image_indexes)) ' images)'],['contaminated accuracy where belief > ' num2str(min_belief)],'Location','northwest')
+					legend('training accuracy','test accuracy',['contaminated accuracy (' num2str(length(goo_image_indexes)) ' images)'],['contaminated accuracy which are chosen'],'Location','northwest')
 					ylim([0 1])
 					hold off
-					title([num2str(train_set_size) ' training images and ' num2str(diss_set_size) '% of the top images from google, with min belief ' num2str(min_belief)])
+					title([num2str(train_set_size) ' training images and ' num2str(diss_set_size) ' top images from google'])%, with max belief ' num2str(min_belief)])
 					xlabel('iterations')
 					ylabel('accuracy')
 					pause(3)
 					toc
-					if(itteration==10000)
-						disp('paused');
-						pause
-					end
 				end
 				if(exist('chosen_number'))
 					save([results_folder '/accuracy_' num2str(train_set_size) '_' num2str(diss_set_size) '_' num2str(min_belief)],'train_accuracy','test_accuracy','chosen_number','chosen_accuracy','goo_used_labels','goo_used_label_beliefs')

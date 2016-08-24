@@ -1,0 +1,841 @@
+379 volleyball+court+outdoor
+318 shopfront
+317 shoe+shop
+300 restaurant
+182 heliport
+7 anechoic+chamber
+/media/MartinK3TB/Datasets/SUN397/SUN_original/hospital/72.jpg 187
+111 corn+field
+/media/MartinK3TB/Datasets/SUN397/SUN_original/shopping+mall+indoor/260.jpg 319
+294 raft
+/media/MartinK3TB/Datasets/SUN397/SUN_original/kasbah/127.jpg 209
+188 hospital+room
+
+240 monastery+outdoor
+312 sauna
+/media/MartinK3TB/Datasets/SUN397/SUN_original/reception/107.jpg 297
+/media/MartinK3TB/Datasets/SUN397/SUN_original/shopping+mall+indoor/36.jpg 319
+236 martial+arts+gym
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bookstore/139.jpg 55
+333 stage+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/greenhouse+outdoor/130.jpg 176
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/reception/122.jpg 297
+380 waiting+room
+218 landing+deck
+340 swamp
+129 diner+outdoor
+==> standard input <==
+359 toyshop
+/media/MartinK3TB/Datasets/SUN397/SUN_original/banquet+hall/141.jpg 33
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/cloister+indoor/193.jpg 99
+==> standard input <==
+229 lock+chamber
+/media/MartinK3TB/Datasets/SUN397/SUN_original/dining+car/213.jpg 132
+168 garbage+dump
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/dining+car/36.jpg 132
+74 canal+natural
+==> standard input <==
+210 kennel+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/theater+indoor+seats/49.jpg 352
+
+212 kindergarden+classroom
+/media/MartinK3TB/Datasets/SUN397/SUN_original/banquet+hall/252.jpg 33
+
+15 art+gallery
+192 hot+tub+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/swimming+pool+indoor/255.jpg 341
+276 picnic+area
+243 motel
+23 auto+factory
+50 biology+laboratory
+395 yard
+/media/MartinK3TB/Datasets/SUN397/SUN_original/physics+laboratory/145.jpg 275
+17 art+studio
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/stable/6.jpg 330
+/media/MartinK3TB/Datasets/SUN397/SUN_original/control+tower+outdoor/341.jpg 110
+/media/MartinK3TB/Datasets/SUN397/SUN_original/crosswalk/174.jpg 121
+267 parking+garage+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/burial+chamber/1.jpg 66
+372 veterinarians+office
+==> standard input <==
+103 cockpit
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ice+shelf/66.jpg 198
+302 restaurant+patio
+272 pavilion
+191 hot+spring
+382 waterfall+block
+313 schoolhouse
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ruin/137.jpg 308
+/media/MartinK3TB/Datasets/SUN397/SUN_original/physics+laboratory/21.jpg 275
+
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/stable/107.jpg 330
+/media/MartinK3TB/Datasets/SUN397/SUN_original/hospital/43.jpg 187
+==> standard input <==
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/control+tower+outdoor/193.jpg 110
+/media/MartinK3TB/Datasets/SUN397/SUN_original/burial+chamber/39.jpg 66
+/media/MartinK3TB/Datasets/SUN397/SUN_original/swimming+pool+indoor/54.jpg 341
+/media/MartinK3TB/Datasets/SUN397/SUN_original/shopping+mall+indoor/206.jpg 319
+/media/MartinK3TB/Datasets/SUN397/SUN_original/youth+hostel/113.jpg 396
+169 gas+station
+/media/MartinK3TB/Datasets/SUN397/SUN_original/hospital/39.jpg 187
+/media/MartinK3TB/Datasets/SUN397/SUN_original/theater+indoor+seats/8.jpg 352
+125 dentists+office
+376 vineyard
+303 rice+paddy
+137 dorm+room
+/media/MartinK3TB/Datasets/SUN397/SUN_original/theater+indoor+seats/42.jpg 352
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ruin/202.jpg 308
+/media/MartinK3TB/Datasets/SUN397/SUN_original/hospital/47.jpg 187
+/media/MartinK3TB/Datasets/SUN397/SUN_original/aqueduct/353.jpg 11
+/media/MartinK3TB/Datasets/SUN397/SUN_original/canyon/235.jpg 77
+235 marsh
+/media/MartinK3TB/Datasets/SUN397/SUN_original/pantry/327.jpg 264
+362 train+station+platform
+381 warehouse+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ice+shelf/50.jpg 198
+56 booth+indoor
+145 engine+room
+157 florist+shop+indoor
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bazaar+indoor/155.jpg 44
+/media/MartinK3TB/Datasets/SUN397/SUN_original/fire+station/39.jpg 154
+186 home+office
+124 delicatessen
+202 industrial+area
+358 tower
+163 formal+garden
+/media/MartinK3TB/Datasets/SUN397/SUN_original/banquet+hall/30.jpg 33
+/media/MartinK3TB/Datasets/SUN397/SUN_original/swimming+pool+indoor/237.jpg 341
+/media/MartinK3TB/Datasets/SUN397/SUN_original/shopping+mall+indoor/165.jpg 319
+/media/MartinK3TB/Datasets/SUN397/SUN_original/abbey/394.jpg 0
+8 apartment+building+outdoor
+301 restaurant+kitchen
+/media/MartinK3TB/Datasets/SUN397/SUN_original/cloister+indoor/55.jpg 99
+115 courthouse
+327 slum
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ruin/134.jpg 308
+/media/MartinK3TB/Datasets/SUN397/SUN_original/videostore/4.jpg 374
+/media/MartinK3TB/Datasets/SUN397/SUN_original/canyon/243.jpg 77
+315 server+room
+346 temple+east+asia
+/media/MartinK3TB/Datasets/SUN397/SUN_original/stable/124.jpg 330
+81 casino+indoor
+355 ticket+booth
+/media/MartinK3TB/Datasets/SUN397/SUN_original/fire+station/249.jpg 154
+/media/MartinK3TB/Datasets/SUN397/SUN_original/observatory+outdoor/182.jpg 253
+360 track+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/greenhouse+outdoor/121.jpg 176
+366 underwater+coral+reef
+298 recreation+room
+/media/MartinK3TB/Datasets/SUN397/SUN_original/chalet/17.jpg 88
+/media/MartinK3TB/Datasets/SUN397/SUN_original/dining+car/229.jpg 132
+52 boardwalk
+40 basketball+court+outdoor
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/abbey/133.jpg 0
+156 fishpond
+/media/MartinK3TB/Datasets/SUN397/SUN_original/chalet/187.jpg 88
+/media/MartinK3TB/Datasets/SUN397/SUN_original/elevator+interior/12.jpg 143
+167 garage+indoor
+79 car+interior+frontseat
+181 hayfield
+==> standard input <==
+83 catacomb
+41 bathroom
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/theater+indoor+seats/34.jpg 352
+365 trench
+58 bowling+alley
+25 badminton+court+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/auditorium/27.jpg 22
+59 bow+window+indoor
+
+347 temple+south+asia
+/media/MartinK3TB/Datasets/SUN397/SUN_original/auditorium/12.jpg 22
+57 botanical+garden
+391 windmill
+/media/MartinK3TB/Datasets/SUN397/SUN_original/elevator+interior/54.jpg 143
+/media/MartinK3TB/Datasets/SUN397/SUN_original/banquet+hall/7.jpg 33
+223 lido+deck+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/dining+car/100.jpg 132
+356 toll+plaza
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mansion/233.jpg 231
+/media/MartinK3TB/Datasets/SUN397/SUN_original/greenhouse+outdoor/18.jpg 176
+194 hunting+lodge+outdoor
+306 rock+arch
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mosque+outdoor/410.jpg 242
+304 riding+arena
+==> standard input <==
+==> tmp <==
+92 chicken+coop+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/theater+indoor+seats/46.jpg 352
+247 museum+indoor
+107 conference+room
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/shopping+mall+indoor/138.jpg 319
+/media/MartinK3TB/Datasets/SUN397/SUN_original/greenhouse+outdoor/71.jpg 176
+112 corral
+==> standard input <==
+197 ice+floe
+/media/MartinK3TB/Datasets/SUN397/SUN_original/cloister+indoor/47.jpg 99
+200 ice+skating+rink+outdoor
+
+
+78 car+interior+backseat
+368 valley
+/media/MartinK3TB/Datasets/SUN397/SUN_original/auditorium/185.jpg 22
+361 train+railway
+172 general+store+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/watering+hole/68.jpg 385
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/dining+car/127.jpg 132
+/media/MartinK3TB/Datasets/SUN397/SUN_original/videostore/104.jpg 374
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bookstore/24.jpg 55
+265 park
+94 church+indoor
+342 swimming+pool+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/pantry/400.jpg 264
+2 airport+terminal
+/media/MartinK3TB/Datasets/SUN397/SUN_original/lecture+room/78.jpg 220
+280 playroom
+93 childs+room
+271 patio
+/media/MartinK3TB/Datasets/SUN397/SUN_original/stable/44.jpg 330
+/media/MartinK3TB/Datasets/SUN397/SUN_original/pantry/205.jpg 264
+148 factory+indoor
+
+144 elevator+shaft
+/media/MartinK3TB/Datasets/SUN397/SUN_original/kasbah/65.jpg 209
+/media/MartinK3TB/Datasets/SUN397/SUN_original/stable/146.jpg 330
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/cloister+indoor/45.jpg 99
+/media/MartinK3TB/Datasets/SUN397/SUN_original/youth+hostel/52.jpg 396
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ice+shelf/91.jpg 198
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mosque+outdoor/273.jpg 242
+/media/MartinK3TB/Datasets/SUN397/SUN_original/canyon/26.jpg 77
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mosque+outdoor/255.jpg 242
+126 desert+sand
+256 office+building
+==> standard input <==
+338 supermarket
+320 shower
+12 arch
+/media/MartinK3TB/Datasets/SUN397/SUN_original/burial+chamber/37.jpg 66
+/media/MartinK3TB/Datasets/SUN397/SUN_original/crosswalk/47.jpg 121
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mosque+outdoor/44.jpg 242
+
+337 subway+station+platform
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/galley/51.jpg 165
+20 atrium+public
+254 ocean
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ruin/196.jpg 308
+108 construction+site
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bookstore/156.jpg 55
+117 courtyard
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/abbey/10.jpg 0
+46 beach
+/media/MartinK3TB/Datasets/SUN397/SUN_original/aqueduct/31.jpg 11
+/media/MartinK3TB/Datasets/SUN397/SUN_original/kasbah/50.jpg 209
+/media/MartinK3TB/Datasets/SUN397/SUN_original/poolroom+home/393.jpg 286
+216 lake+natural
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ice+shelf/6.jpg 198
+/media/MartinK3TB/Datasets/SUN397/SUN_original/crosswalk/135.jpg 121
+
+
+151 field+cultivated
+309 runway
+263 palace
+122 cubicle+office
+208 jewelry+shop
+/media/MartinK3TB/Datasets/SUN397/SUN_original/hospital/10.jpg 187
+/media/MartinK3TB/Datasets/SUN397/SUN_original/pantry/360.jpg 264
+96 classroom
+/media/MartinK3TB/Datasets/SUN397/SUN_original/kasbah/114.jpg 209
+/media/MartinK3TB/Datasets/SUN397/SUN_original/poolroom+home/195.jpg 286
+/media/MartinK3TB/Datasets/SUN397/SUN_original/lecture+room/60.jpg 220
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bookstore/208.jpg 55
+/media/MartinK3TB/Datasets/SUN397/SUN_original/banquet+hall/34.jpg 33
+/media/MartinK3TB/Datasets/SUN397/SUN_original/observatory+outdoor/90.jpg 253
+387 wave
+/media/MartinK3TB/Datasets/SUN397/SUN_original/burial+chamber/47.jpg 66
+==> tmp <==
+321 skatepark
+/media/MartinK3TB/Datasets/SUN397/SUN_original/aqueduct/6.jpg 11
+/media/MartinK3TB/Datasets/SUN397/SUN_original/poolroom+home/202.jpg 286
+130 dinette+home
+/media/MartinK3TB/Datasets/SUN397/SUN_original/abbey/364.jpg 0
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bazaar+indoor/139.jpg 44
+178 hangar+indoor
+68 butchers+shop
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mosque+outdoor/341.jpg 242
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/theater+indoor+seats/92.jpg 352
+/media/MartinK3TB/Datasets/SUN397/SUN_original/greenhouse+outdoor/78.jpg 176
+392 wine+cellar+barrel+storage
+91 chicken+coop+indoor
+293 raceway
+310 sandbar
+35 barn
+
+384 waterfall+plunge
+367 utility+room
+335 street
+/media/MartinK3TB/Datasets/SUN397/SUN_original/galley/218.jpg 165
+/media/MartinK3TB/Datasets/SUN397/SUN_original/swimming+pool+indoor/20.jpg 341
+/media/MartinK3TB/Datasets/SUN397/SUN_original/pantry/306.jpg 264
+/media/MartinK3TB/Datasets/SUN397/SUN_original/greenhouse+outdoor/17.jpg 176
+/media/MartinK3TB/Datasets/SUN397/SUN_original/aqueduct/14.jpg 11
+49 berth
+16 art+school
+/media/MartinK3TB/Datasets/SUN397/SUN_original/galley/170.jpg 165
+389 wheat+field
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bookstore/12.jpg 55
+/media/MartinK3TB/Datasets/SUN397/SUN_original/galley/78.jpg 165
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bookstore/101.jpg 55
+/media/MartinK3TB/Datasets/SUN397/SUN_original/burial+chamber/76.jpg 66
+161 forest+path
+/media/MartinK3TB/Datasets/SUN397/SUN_original/elevator+interior/30.jpg 143
+/media/MartinK3TB/Datasets/SUN397/SUN_original/burial+chamber/28.jpg 66
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/fire+station/202.jpg 154
+136 doorway+outdoor
+==> standard input <==
+==> standard input <==
+184 highway
+/media/MartinK3TB/Datasets/SUN397/SUN_original/swimming+pool+indoor/235.jpg 341
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mosque+outdoor/229.jpg 242
+215 labyrinth+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ice+shelf/119.jpg 198
+166 game+room
+158 food+court
+
+394 wrestling+ring+indoor
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/youth+hostel/69.jpg 396
+==> tmp <==
+146 escalator+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/kasbah/17.jpg 209
+/media/MartinK3TB/Datasets/SUN397/SUN_original/burial+chamber/38.jpg 66
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ice+shelf/64.jpg 198
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/observatory+outdoor/77.jpg 253
+269 parlor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/watering+hole/90.jpg 385
+72 campsite
+284 pond
+/media/MartinK3TB/Datasets/SUN397/SUN_original/watering+hole/101.jpg 385
+170 gazebo+exterior
+/media/MartinK3TB/Datasets/SUN397/SUN_original/canyon/195.jpg 77
+296 rainforest
+/media/MartinK3TB/Datasets/SUN397/SUN_original/control+tower+outdoor/144.jpg 110
+/media/MartinK3TB/Datasets/SUN397/SUN_original/canyon/108.jpg 77
+/media/MartinK3TB/Datasets/SUN397/SUN_original/greenhouse+outdoor/82.jpg 176
+/media/MartinK3TB/Datasets/SUN397/SUN_original/reception/181.jpg 297
+/media/MartinK3TB/Datasets/SUN397/SUN_original/reception/145.jpg 297
+/media/MartinK3TB/Datasets/SUN397/SUN_original/banquet+hall/112.jpg 33
+283 podium+outdoor
+116 courtroom
+/media/MartinK3TB/Datasets/SUN397/SUN_original/videostore/69.jpg 374
+/media/MartinK3TB/Datasets/SUN397/SUN_original/tree+farm/99.jpg 363
+/media/MartinK3TB/Datasets/SUN397/SUN_original/watering+hole/26.jpg 385
+/media/MartinK3TB/Datasets/SUN397/SUN_original/kasbah/177.jpg 209
+/media/MartinK3TB/Datasets/SUN397/SUN_original/aqueduct/220.jpg 11
+/media/MartinK3TB/Datasets/SUN397/SUN_original/reception/66.jpg 297
+288 promenade+deck
+244 mountain
+13 archive
+54 boathouse
+353 thriftshop
+226 limousine+interior
+/media/MartinK3TB/Datasets/SUN397/SUN_original/control+tower+outdoor/351.jpg 110
+63 bridge
+348 tennis+court+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/videostore/10.jpg 374
+/media/MartinK3TB/Datasets/SUN397/SUN_original/galley/134.jpg 165
+/media/MartinK3TB/Datasets/SUN397/SUN_original/hospital/79.jpg 187
+==> tmp <==
+239 moat+water
+278 planetarium+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mansion/281.jpg 231
+140 drugstore
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mansion/278.jpg 231
+/media/MartinK3TB/Datasets/SUN397/SUN_original/canyon/46.jpg 77
+102 coast
+/media/MartinK3TB/Datasets/SUN397/SUN_original/physics+laboratory/77.jpg 275
+/media/MartinK3TB/Datasets/SUN397/SUN_original/pantry/399.jpg 264
+/media/MartinK3TB/Datasets/SUN397/SUN_original/lecture+room/174.jpg 220
+18 assembly+line
+62 brewery+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/physics+laboratory/155.jpg 275
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mosque+outdoor/59.jpg 242
+/media/MartinK3TB/Datasets/SUN397/SUN_original/chalet/111.jpg 88
+255 office
+==> tmp <==
+==> tmp <==
+134 discotheque
+262 pagoda
+388 wet+bar
+292 racecourse
+/media/MartinK3TB/Datasets/SUN397/SUN_original/shopping+mall+indoor/81.jpg 319
+299 residential+neighborhood
+/media/MartinK3TB/Datasets/SUN397/SUN_original/canyon/161.jpg 77
+==> tmp <==
+3 alley
+/media/MartinK3TB/Datasets/SUN397/SUN_original/observatory+outdoor/82.jpg 253
+/media/MartinK3TB/Datasets/SUN397/SUN_original/banquet+hall/184.jpg 33
+==> tmp <==
+252 oast+house
+80 carrousel
+189 hotel+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/control+tower+outdoor/257.jpg 110
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bazaar+indoor/17.jpg 44
+261 outhouse+outdoor
+131 dinette+vehicle
+205 jacuzzi+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/crosswalk/58.jpg 121
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/observatory+outdoor/88.jpg 253
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ice+shelf/65.jpg 198
+60 bow+window+outdoor
+133 dining+room
+/media/MartinK3TB/Datasets/SUN397/SUN_original/lecture+room/134.jpg 220
+289 pub+indoor
+==> tmp <==
+
+238 medina
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bazaar+indoor/29.jpg 44
+/media/MartinK3TB/Datasets/SUN397/SUN_original/youth+hostel/77.jpg 396
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/auditorium/113.jpg 22
+/media/MartinK3TB/Datasets/SUN397/SUN_original/canyon/67.jpg 77
+135 dock
+61 boxing+ring
+336 subway+interior
+287 power+plant+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/poolroom+home/133.jpg 286
+214 kitchenette
+/media/MartinK3TB/Datasets/SUN397/SUN_original/physics+laboratory/163.jpg 275
+/media/MartinK3TB/Datasets/SUN397/SUN_original/pantry/130.jpg 264
+/media/MartinK3TB/Datasets/SUN397/SUN_original/kasbah/59.jpg 209
+277 pilothouse+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/videostore/98.jpg 374
+/media/MartinK3TB/Datasets/SUN397/SUN_original/swimming+pool+indoor/129.jpg 341
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bazaar+indoor/91.jpg 44
+/media/MartinK3TB/Datasets/SUN397/SUN_original/lecture+room/19.jpg 220
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/tree+farm/75.jpg 363
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mansion/206.jpg 231
+/media/MartinK3TB/Datasets/SUN397/SUN_original/galley/222.jpg 165
+/media/MartinK3TB/Datasets/SUN397/SUN_original/hospital/104.jpg 187
+/media/MartinK3TB/Datasets/SUN397/SUN_original/youth+hostel/40.jpg 396
+177 gymnasium+indoor
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/reception/61.jpg 297
+/media/MartinK3TB/Datasets/SUN397/SUN_original/reception/69.jpg 297
+/media/MartinK3TB/Datasets/SUN397/SUN_original/fire+station/267.jpg 154
+219 laundromat
+328 snowfield
+70 cabin+outdoor
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/cloister+indoor/149.jpg 99
+==> standard input <==
+227 living+room
+159 forest+broadleaf
+71 cafeteria
+/media/MartinK3TB/Datasets/SUN397/SUN_original/chalet/117.jpg 88
+==> tmp <==
+185 hill
+/media/MartinK3TB/Datasets/SUN397/SUN_original/lecture+room/177.jpg 220
+/media/MartinK3TB/Datasets/SUN397/SUN_original/youth+hostel/132.jpg 396
+/media/MartinK3TB/Datasets/SUN397/SUN_original/pantry/48.jpg 264
+/media/MartinK3TB/Datasets/SUN397/SUN_original/watering+hole/77.jpg 385
+291 putting+green
+/media/MartinK3TB/Datasets/SUN397/SUN_original/elevator+interior/57.jpg 143
+369 van+interior
+/media/MartinK3TB/Datasets/SUN397/SUN_original/crosswalk/3.jpg 121
+164 fountain
+95 church+outdoor
+195 iceberg
+/media/MartinK3TB/Datasets/SUN397/SUN_original/hospital/103.jpg 187
+233 market+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/tree+farm/43.jpg 363
+69 butte
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/elevator+interior/13.jpg 143
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/chalet/174.jpg 88
+357 topiary+garden
+323 ski+resort
+/media/MartinK3TB/Datasets/SUN397/SUN_original/greenhouse+outdoor/56.jpg 176
+/media/MartinK3TB/Datasets/SUN397/SUN_original/videostore/31.jpg 374
+/media/MartinK3TB/Datasets/SUN397/SUN_original/elevator+interior/78.jpg 143
+171 general+store+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/abbey/149.jpg 0
+230 locker+room
+259 operating+room
+324 ski+slope
+258 oilrig
+228 lobby
+/media/MartinK3TB/Datasets/SUN397/SUN_original/elevator+interior/79.jpg 143
+/media/MartinK3TB/Datasets/SUN397/SUN_original/kasbah/154.jpg 209
+/media/MartinK3TB/Datasets/SUN397/SUN_original/poolroom+home/358.jpg 286
+105 computer+room
+/media/MartinK3TB/Datasets/SUN397/SUN_original/videostore/33.jpg 374
+/media/MartinK3TB/Datasets/SUN397/SUN_original/videostore/18.jpg 374
+350 tent+outdoor
+390 wind+farm
+/media/MartinK3TB/Datasets/SUN397/SUN_original/galley/164.jpg 165
+29 balcony+interior
+217 landfill
+364 tree+house
+326 skyscraper
+/media/MartinK3TB/Datasets/SUN397/SUN_original/dining+car/83.jpg 132
+174 golf+course
+150 fastfood+restaurant
+85 cathedral+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/watering+hole/12.jpg 385
+67 bus+interior
+/media/MartinK3TB/Datasets/SUN397/SUN_original/burial+chamber/26.jpg 66
+/media/MartinK3TB/Datasets/SUN397/SUN_original/chalet/144.jpg 88
+/media/MartinK3TB/Datasets/SUN397/SUN_original/tree+farm/90.jpg 363
+316 shed
+53 boat+deck
+/media/MartinK3TB/Datasets/SUN397/SUN_original/cloister+indoor/73.jpg 99
+/media/MartinK3TB/Datasets/SUN397/SUN_original/lecture+room/95.jpg 220
+==> tmp <==
+206 jail+cell
+/media/MartinK3TB/Datasets/SUN397/SUN_original/videostore/36.jpg 374
+/media/MartinK3TB/Datasets/SUN397/SUN_original/tree+farm/13.jpg 363
+/media/MartinK3TB/Datasets/SUN397/SUN_original/galley/245.jpg 165
+/media/MartinK3TB/Datasets/SUN397/SUN_original/kasbah/160.jpg 209
+127 desert+vegetation
+232 manufactured+home
+113 corridor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/chalet/100.jpg 88
+/media/MartinK3TB/Datasets/SUN397/SUN_original/crosswalk/108.jpg 121
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ruin/252.jpg 308
+/media/MartinK3TB/Datasets/SUN397/SUN_original/swimming+pool+indoor/30.jpg 341
+/media/MartinK3TB/Datasets/SUN397/SUN_original/observatory+outdoor/104.jpg 253
+/media/MartinK3TB/Datasets/SUN397/SUN_original/kasbah/149.jpg 209
+19 athletic+field+outdoor
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bookstore/182.jpg 55
+/media/MartinK3TB/Datasets/SUN397/SUN_original/dining+car/177.jpg 132
+39 basilica
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/hospital/41.jpg 187
+==> standard input <==
+199 ice+skating+rink+indoor
+213 kitchen
+97 clean+room
+180 harbor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/cloister+indoor/97.jpg 99
+329 squash+court
+/media/MartinK3TB/Datasets/SUN397/SUN_original/reception/38.jpg 297
+10 aquarium
+/media/MartinK3TB/Datasets/SUN397/SUN_original/crosswalk/2.jpg 121
+248 music+store
+21 attic
+/media/MartinK3TB/Datasets/SUN397/SUN_original/dining+car/107.jpg 132
+/media/MartinK3TB/Datasets/SUN397/SUN_original/swimming+pool+indoor/26.jpg 341
+/media/MartinK3TB/Datasets/SUN397/SUN_original/videostore/19.jpg 374
+51 bistro+indoor
+138 driveway
+/media/MartinK3TB/Datasets/SUN397/SUN_original/burial+chamber/66.jpg 66
+/media/MartinK3TB/Datasets/SUN397/SUN_original/lecture+room/71.jpg 220
+383 waterfall+fan
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mansion/297.jpg 231
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/physics+laboratory/20.jpg 275
+/media/MartinK3TB/Datasets/SUN397/SUN_original/banquet+hall/226.jpg 33
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/aqueduct/178.jpg 11
+332 stadium+football
+/media/MartinK3TB/Datasets/SUN397/SUN_original/youth+hostel/70.jpg 396
+274 phone+booth
+204 islet
+/media/MartinK3TB/Datasets/SUN397/SUN_original/pantry/21.jpg 264
+351 theater+indoor+procenium
+75 canal+urban
+190 hotel+room
+/media/MartinK3TB/Datasets/SUN397/SUN_original/fire+station/232.jpg 154
+331 stadium+baseball
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/chalet/276.jpg 88
+/media/MartinK3TB/Datasets/SUN397/SUN_original/fire+station/279.jpg 154
+155 firing+range+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mansion/186.jpg 231
+/media/MartinK3TB/Datasets/SUN397/SUN_original/crosswalk/26.jpg 121
+48 bedroom
+221 library+indoor
+100 closet
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mansion/242.jpg 231
+225 lighthouse
+/media/MartinK3TB/Datasets/SUN397/SUN_original/stable/20.jpg 330
+/media/MartinK3TB/Datasets/SUN397/SUN_original/theater+indoor+seats/35.jpg 352
+/media/MartinK3TB/Datasets/SUN397/SUN_original/reception/141.jpg 297
+/media/MartinK3TB/Datasets/SUN397/SUN_original/auditorium/178.jpg 22
+/media/MartinK3TB/Datasets/SUN397/SUN_original/cloister+indoor/69.jpg 99
+38 basement
+/media/MartinK3TB/Datasets/SUN397/SUN_original/tree+farm/80.jpg 363
+305 river
+/media/MartinK3TB/Datasets/SUN397/SUN_original/poolroom+home/55.jpg 286
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bazaar+indoor/103.jpg 44
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/swimming+pool+indoor/66.jpg 341
+203 inn+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/greenhouse+outdoor/49.jpg 176
+241 mosque+indoor
+
+47 beauty+salon
+==> standard input <==
+311 sandbox
+30 ball+pit
+6 amusement+park
+/media/MartinK3TB/Datasets/SUN397/SUN_original/watering+hole/95.jpg 385
+270 pasture
+/media/MartinK3TB/Datasets/SUN397/SUN_original/abbey/417.jpg 0
+175 greenhouse+indoor
+==> standard input <==
+249 music+studio
+/media/MartinK3TB/Datasets/SUN397/SUN_original/control+tower+outdoor/239.jpg 110
+82 castle
+
+344 synagogue+outdoor
+76 candy+store
+/media/MartinK3TB/Datasets/SUN397/SUN_original/abbey/159.jpg 0
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ice+shelf/125.jpg 198
+34 bar
+/media/MartinK3TB/Datasets/SUN397/SUN_original/theater+indoor+seats/47.jpg 352
+160 forest+needleleaf
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bazaar+indoor/18.jpg 44
+/media/MartinK3TB/Datasets/SUN397/SUN_original/aqueduct/292.jpg 11
+==> tmp <==
+183 herb+garden
+322 ski+lodge
+/media/MartinK3TB/Datasets/SUN397/SUN_original/galley/206.jpg 165
+/media/MartinK3TB/Datasets/SUN397/SUN_original/tree+farm/101.jpg 363
+224 lift+bridge
+65 bullring
+207 jail+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/cloister+indoor/109.jpg 99
+386 water+tower
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/poolroom+home/84.jpg 286
+179 hangar+outdoor
+==> standard input <==
+14 arrival+gate+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/control+tower+outdoor/426.jpg 110
+/media/MartinK3TB/Datasets/SUN397/SUN_original/poolroom+home/60.jpg 286
+
+1 airplane+cabin
+/media/MartinK3TB/Datasets/SUN397/SUN_original/abbey/390.jpg 0
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ruin/68.jpg 308
+147 excavation
+378 volleyball+court+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mosque+outdoor/87.jpg 242
+/media/MartinK3TB/Datasets/SUN397/SUN_original/poolroom+home/238.jpg 286
+290 pulpit
+/media/MartinK3TB/Datasets/SUN397/SUN_original/hospital/13.jpg 187
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mansion/270.jpg 231
+128 diner+indoor
+343 synagogue+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/watering+hole/14.jpg 385
+/media/MartinK3TB/Datasets/SUN397/SUN_original/observatory+outdoor/159.jpg 253
+/media/MartinK3TB/Datasets/SUN397/SUN_original/aqueduct/275.jpg 11
+250 nuclear+power+plant+outdoor
+4 amphitheater
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/elevator+interior/33.jpg 143
+/media/MartinK3TB/Datasets/SUN397/SUN_original/lecture+room/98.jpg 220
+/media/MartinK3TB/Datasets/SUN397/SUN_original/youth+hostel/95.jpg 396
+/media/MartinK3TB/Datasets/SUN397/SUN_original/observatory+outdoor/163.jpg 253
+/media/MartinK3TB/Datasets/SUN397/SUN_original/crosswalk/179.jpg 121
+149 fairway
+/media/MartinK3TB/Datasets/SUN397/SUN_original/aqueduct/114.jpg 11
+
+246 movie+theater+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ruin/176.jpg 308
+268 parking+lot
+/media/MartinK3TB/Datasets/SUN397/SUN_original/dining+car/183.jpg 132
+/media/MartinK3TB/Datasets/SUN397/SUN_original/watering+hole/65.jpg 385
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/physics+laboratory/138.jpg 275
+139 driving+range+outdoor
+266 parking+garage+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/observatory+outdoor/137.jpg 253
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ruin/219.jpg 308
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bookstore/197.jpg 55
+/media/MartinK3TB/Datasets/SUN397/SUN_original/fire+station/96.jpg 154
+104 coffee+shop
+295 railroad+track
+119 creek
+/media/MartinK3TB/Datasets/SUN397/SUN_original/youth+hostel/47.jpg 396
+334 staircase
+/media/MartinK3TB/Datasets/SUN397/SUN_original/auditorium/61.jpg 22
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bookstore/138.jpg 55
+339 sushi+bar
+84 cathedral+indoor
+==> standard input <==
+
+28 balcony+exterior
+==> standard input <==
+114 cottage+garden
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/control+tower+outdoor/204.jpg 110
+/media/MartinK3TB/Datasets/SUN397/SUN_original/elevator+interior/40.jpg 143
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ruin/91.jpg 308
+/media/MartinK3TB/Datasets/SUN397/SUN_original/chalet/195.jpg 88
+==> standard input <==
+211 kennel+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/burial+chamber/86.jpg 66
+109 control+room
+237 mausoleum
+/media/MartinK3TB/Datasets/SUN397/SUN_original/cloister+indoor/173.jpg 99
+/media/MartinK3TB/Datasets/SUN397/SUN_original/crosswalk/78.jpg 121
+279 playground
+36 barndoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/stable/117.jpg 330
+
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/tree+farm/71.jpg 363
+/media/MartinK3TB/Datasets/SUN397/SUN_original/tree+farm/102.jpg 363
+/media/MartinK3TB/Datasets/SUN397/SUN_original/banquet+hall/59.jpg 33
+87 cemetery
+24 badlands
+123 dam
+371 veranda
+98 cliff
+26 baggage+claim
+/media/MartinK3TB/Datasets/SUN397/SUN_original/abbey/204.jpg 0
+373 viaduct
+31 ballroom
+/media/MartinK3TB/Datasets/SUN397/SUN_original/theater+indoor+seats/84.jpg 352
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ice+shelf/3.jpg 198
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bookstore/99.jpg 55
+349 tennis+court+outdoor
+
+/media/MartinK3TB/Datasets/SUN397/SUN_original/dining+car/32.jpg 132
+/media/MartinK3TB/Datasets/SUN397/SUN_original/physics+laboratory/143.jpg 275
+307 rope+bridge
+273 pharmacy
+==> tmp <==
+251 nursery
+/media/MartinK3TB/Datasets/SUN397/SUN_original/aqueduct/295.jpg 11
+153 fire+escape
+/media/MartinK3TB/Datasets/SUN397/SUN_original/auditorium/130.jpg 22
+/media/MartinK3TB/Datasets/SUN397/SUN_original/fire+station/261.jpg 154
+/media/MartinK3TB/Datasets/SUN397/SUN_original/observatory+outdoor/152.jpg 253
+45 bazaar+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/watering+hole/11.jpg 385
+/media/MartinK3TB/Datasets/SUN397/SUN_original/stable/142.jpg 330
+/media/MartinK3TB/Datasets/SUN397/SUN_original/pantry/461.jpg 264
+/media/MartinK3TB/Datasets/SUN397/SUN_original/reception/78.jpg 297
+==> tmp <==
+257 oil+refinery+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/shopping+mall+indoor/110.jpg 319
+/media/MartinK3TB/Datasets/SUN397/SUN_original/tree+farm/15.jpg 363
+260 orchard
+==> tmp <==
+==> tmp <==
+
+196 ice+cream+parlor
+325 sky
+89 cheese+factory
+285 poolroom+establishment
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/auditorium/170.jpg 22
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mosque+outdoor/129.jpg 242
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/chalet/235.jpg 88
+101 clothing+store
+141 electrical+substation
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mansion/188.jpg 231
+/media/MartinK3TB/Datasets/SUN397/SUN_original/physics+laboratory/159.jpg 275
+/media/MartinK3TB/Datasets/SUN397/SUN_original/stable/159.jpg 330
+/media/MartinK3TB/Datasets/SUN397/SUN_original/shopping+mall+indoor/242.jpg 319
+42 batters+box
+/media/MartinK3TB/Datasets/SUN397/SUN_original/shopping+mall+indoor/42.jpg 319
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bazaar+indoor/41.jpg 44
+/media/MartinK3TB/Datasets/SUN397/SUN_original/auditorium/240.jpg 22
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mosque+outdoor/180.jpg 242
+==> tmp <==
+118 covered+bridge+exterior
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bazaar+indoor/84.jpg 44
+/media/MartinK3TB/Datasets/SUN397/SUN_original/theater+indoor+seats/61.jpg 352
+162 forest+road
+142 elevator+door
+314 sea+cliff
+106 conference+center
+/media/MartinK3TB/Datasets/SUN397/SUN_original/lecture+room/142.jpg 220
+/media/MartinK3TB/Datasets/SUN397/SUN_original/control+tower+outdoor/92.jpg 110
+43 bayou
+345 television+studio
+201 igloo
+==> standard input <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/poolroom+home/19.jpg 286
+/media/MartinK3TB/Datasets/SUN397/SUN_original/elevator+interior/94.jpg 143
+5 amusement+arcade
+/media/MartinK3TB/Datasets/SUN397/SUN_original/canyon/132.jpg 77
+90 chemistry+lab
+
+152 field+wild
+/media/MartinK3TB/Datasets/SUN397/SUN_original/swimming+pool+indoor/35.jpg 341
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ice+shelf/122.jpg 198
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/physics+laboratory/123.jpg 275
+32 bamboo+forest
+27 bakery+shop
+/media/MartinK3TB/Datasets/SUN397/SUN_original/greenhouse+outdoor/64.jpg 176
+245 mountain+snowy
+/media/MartinK3TB/Datasets/SUN397/SUN_original/fire+station/140.jpg 154
+370 vegetable+garden
+222 library+outdoor
+375 village
+37 baseball+field
+354 throne+room
+/media/MartinK3TB/Datasets/SUN397/SUN_original/shopping+mall+indoor/97.jpg 319
+282 podium+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/banquet+hall/204.jpg 33
+/media/MartinK3TB/Datasets/SUN397/SUN_original/youth+hostel/84.jpg 396
+/media/MartinK3TB/Datasets/SUN397/SUN_original/canyon/70.jpg 77
+120 crevasse
+/media/MartinK3TB/Datasets/SUN397/SUN_original/control+tower+outdoor/137.jpg 110
+/media/MartinK3TB/Datasets/SUN397/SUN_original/fire+station/60.jpg 154
+/media/MartinK3TB/Datasets/SUN397/SUN_original/abbey/90.jpg 0
+173 gift+shop
+
+86 cavern+indoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/mansion/236.jpg 231
+393 wine+cellar+bottle+storage
+64 building+facade
+377 volcano
+==> standard input <==
+==> standard input <==
+193 house
+/media/MartinK3TB/Datasets/SUN397/SUN_original/bazaar+indoor/123.jpg 44
+9 apse+indoor
+==> tmp <==
+==> tmp <==
+/media/MartinK3TB/Datasets/SUN397/SUN_original/ruin/148.jpg 308
+234 market+outdoor
+/media/MartinK3TB/Datasets/SUN397/SUN_original/stable/120.jpg 330
+/media/MartinK3TB/Datasets/SUN397/SUN_original/auditorium/174.jpg 22
+/media/MartinK3TB/Datasets/SUN397/SUN_original/galley/24.jpg 165
+281 plaza
+73 campus
+

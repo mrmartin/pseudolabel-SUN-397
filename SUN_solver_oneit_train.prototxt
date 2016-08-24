@@ -11,14 +11,14 @@ net: "SUN_matlab_perceptron_train.prototxt"
 # Carry out testing every n training iterations.
 # test_interval: 500
 # The base learning rate, momentum and the weight decay of the network.
-base_lr: 0.001
+base_lr: 0.01
 momentum: 0.09
 weight_decay: 0.005
 # The learning rate policy
 lr_policy: "inv"
-gamma: 0.0001
+gamma: 0.01
 power: 0.75
-# Display every 100 iterations
+# Display every 50 iterations
 display: 50
 # The maximum number of iterations
 #max_iter: 100
